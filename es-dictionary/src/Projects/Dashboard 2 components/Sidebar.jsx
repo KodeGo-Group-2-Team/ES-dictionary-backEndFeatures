@@ -66,28 +66,28 @@ export default function Sidebar({ click , showSidebar , showSideHeader , showUse
 
             <ul className={showSideMenuList?"side_menu_list2":"side_menu_list"}>
                 <li>
-                    <Link to="/users" className="sidelist" onClick={() => handleClick("button1")}>
+                    <Link to="/" className="sidelist" onClick={() => handleClick("button1")}>
                         <span className="icon"><i className="fa-solid fa-list"></i></span>
                         <span className={showTitle?"title2":"title"}>Dashboard</span>
                     </Link>
                 </li>
                 <li>
-                    <a href=""className="sidelist">
+                    <Link href="/"className="sidelist">
                         <span className="icon"><i className="fa-solid fa-book"></i></span>
                         <span className={showTitle?"title2":"title"}>Dictionary</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard" className="sidelist" onClick={() => handleClick("button2")}>
+                    <Link to="/" className="sidelist" onClick={() => handleClick("button2")}>
                         <span className="icon"><i className="fa-solid fa-user"></i></span>
                         <span className={showTitle?"title2":"title"}>Account</span>
                     </Link>
                 </li>
                 <li>
-                    <a href="" className="sidelist">
+                    <Link href="/" className="sidelist">
                         <span className="icon"><i className="fa-solid fa-ticket"></i></span>
                         <span className={showTitle?"title2":"title"}>Support</span>
-                    </a>
+                    </Link>
                 </li>
             </ul>
             <div className="weather-bottom">
